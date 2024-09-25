@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Connect</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Sport<span>Connect</span></a></div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="white-box">
+            <h2>Registration Form</h2>
+            <form action="/sign_up" method="POST">
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                <input type="tel" id="phno" name="phno" placeholder="Enter Phone Number" required>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <select id="role" name="role">
+                    <option value="student">Choose Your role</option>
+                    <option value="student">Student</option>
+                    <option value="admin">Admin</option>
+                    <option value="coordinator">Coordinator</option>
+                    <option value="instructor">Instructor</option>
+                </select>
+                <input type="submit" class="button1" value="Sign Up">
+            </form>
+            <p>Already have an account? <a href="/login/loginpage.html">Login</a></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

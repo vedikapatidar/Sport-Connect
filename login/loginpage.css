@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* all similar content styling codes */
+section{
+    padding: 50px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.button1{
+  width: 200px;
+  height: 30px;
+  margin-top: 30px;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 50px;
+  background-color: black;
+}
+.button1:hover{
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: black;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+/* home section styling */
+.home{
+  display: flex;
+  background: url("/images/backgroundimage.png");
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .white-box{
+  height: 350px;
+  width: 250px;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: 500px;
+  background-color: white;
+}
+.home .white-box .allusers li{
+  list-style: none;
+}
+.home .white-box h2{
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.home .white-box {
+  justify-content: space-around;
+  margin-left: 42%;
+  transform: translateX(150%);
+  animation: white-box-animation 1s ease-in-out forwards;
+}
+
+@keyframes white-box-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+input{
+  width: 200px;
+  height: 30px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 0;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50px;
+  background: #D9D9D9;
+  color: black;
+}
+select{
+  width: 200px;
+  height: 30px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-bottom: 5px;
+  border: 0;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50px;
+  background: #D9D9D9;
+  color: black;
+}
+.home .white-box p{
+  color: #747171;
+  padding: 8px;
+  font-size: 14px;
+}
+.forget{
+  color: #747171;
+}
+.home .white-box a{
+  color: black;
+}
+
+/* responsive media query start */
+@media (max-width: 991px) {
+  .max-width{
+      padding: 0 50px;
+  }
+}
+@media (max-width: 947px){
+  .menu-btn i.active:before{
+      content: "\f00d";
+  }
+  .max-width{
+      max-width: 930px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width{
+      padding: 0 23px;
+  }
+}
