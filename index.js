@@ -2,8 +2,11 @@ var express = require("express")
 var bodyParser = require("body-parser")
 var mongoose = require("mongoose")
 const path = require('path');
+require('dotenv').config();
 
 const app = express()
+const port = process.env.port;
+const uri = process.env.mongodb_uri;
 
 app.use(bodyParser.json())
 app.use(express.static('public'))
@@ -19,7 +22,7 @@ app.use(bodyParser.urlencoded({
 // db.once('open', () => console.log("Connected to Database"))
 
 // MongoDB Atlas connection string
-const mongoURI = 'mongodb+srv://vedika:sport@sportconnect.6dm9r.mongodb.net/';
+const mongoURI = uri;
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
@@ -120,6 +123,6 @@ app.get('/', (req, res) => {
    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(3000, () => {
-   console.log("Listening on port 3000");
+app.listen(port, () => {
+   console.log(`Server is running on Port ${port}`);
 });
