@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar.sticky {
+    background: #555;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.profile-container {
+    background: #fff;
+    padding: 30px;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #aaa;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-details label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#edit-button {
+    background: #007bff;
+    color: #fff;
+}
+
+#save-button {
+    background: #28a745;
+    color: #fff;
+}
